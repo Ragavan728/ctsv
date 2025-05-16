@@ -1,0 +1,674 @@
+/* Default code Starts here */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-wrap: word-wrap;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.5rem;
+    font-size: 1.6rem;
+    -webkit-font-smoothing: antialiased;
+    font-optical-sizing: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h6,
+p {
+    text-wrap: balance;
+    font-family: var(--ffPrimary);
+}
+
+input,
+textarea,
+button {
+    font-family: inherit;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+:root {
+    --primaryColor: #000000;
+    --secondaryColor: #00000059;
+    --tertiaryColor: #0000006d;
+    --bgColor: #F8FBFF;
+    --card02Color: #1084B5;
+    --card03Color: #41D481;
+    --darkColor: #FF850D;
+    --lightColor: #ffffff;
+    --regularFont: 1.4rem;
+    --headingFont: 2rem;
+    --ffPrimary: "Poppins", sans-serif;
+}
+
+section {
+    padding: 9rem 0rem;
+}
+
+/* NavBar section */
+.nav_top {
+    padding: 2rem 0rem;
+}
+
+.phno p {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--secondaryColor);
+}
+
+.phno p span {
+    margin-left: 1rem;
+    color: var(--primaryColor);
+}
+
+.nav-media-icons a {
+    font-size: 1.5rem;
+    color: var(--secondaryColor);
+}
+
+
+.button a {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--primaryColor);
+}
+
+.button a:hover {
+    text-decoration: none;
+    color: var(--darkColor);
+}
+
+.navbar-brand img {
+    width: 30rem;
+}
+
+.navbar-brand {
+    margin-right: 15.5rem;
+}
+
+.nav-item {
+    padding-right: 3rem;
+}
+
+.nav-lit-items .nav-item .nav-link {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--primaryColor);
+}
+
+.nav-lit-items .nav-item .nav-link:hover {
+    color: var(--darkColor);
+}
+
+.navbar-toggler {
+    background-color: var(--darkColor);
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.navbar-toggler-icon {
+    filter: invert(100%);
+    width: 24px;
+    height: 24px;
+}
+
+/* heroSection */
+.heroSection {
+    padding: 8rem 0rem 0rem 0rem;
+    background-image: url(./assets/images/bg-1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.carouselContent h1 {
+    font-size: 6rem;
+    font-weight: 600;
+    color: #000000b3;
+    margin-bottom: 3.7rem;
+}
+
+.carouselContent p {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--primaryColor);
+    margin-bottom: 5.7rem;
+}
+
+.heroButton {
+    background-color: var(--lightColor);
+    padding: 1.5rem 2.5rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--primaryColor);
+    border: 1px solid var(--secondaryColor);
+    border-radius: 3rem;
+    margin-bottom: 5rem;
+}
+
+.heroButton:hover {
+    background-color: var(--primaryColor);
+    color: var(--lightColor);
+}
+
+.carouselContent {
+    width: 40%;
+}
+
+.carouselImg img {
+    width: 50rem;
+}
+
+.carousel-control-prev {
+    font-size: 5rem;
+    color: #000000;
+}
+
+/* Requirements Section  */
+.heading h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--secondaryColor);
+    margin-bottom: 2rem;
+}
+
+.heading h2 {
+    font-size: 4.2rem;
+    font-weight: 600;
+    color: var(--primaryColor);
+    margin-bottom: 5rem;
+    line-height: 6rem;
+}
+
+.requirementCards01 {
+    width: 39rem;
+    height: 50rem;
+    background-color: var(--darkColor);
+}
+
+.requirementCards02 {
+    width: 39rem;
+    height: 50rem;
+    background-color: var(--card02Color);
+}
+
+.requirementCards03 {
+    width: 39rem;
+    height: 50rem;
+    background-color: var(--card03Color);
+}
+
+.cardHead img {
+    border-radius: 50%;
+    margin-bottom: 4rem;
+}
+
+.cardBody a {
+    font-size: 2.4rem;
+    color: var(--lightColor);
+}
+
+.cardBody a:hover {
+    text-decoration: none;
+    color: var(--primaryColor);
+}
+
+.cardBody p {
+    padding: 1rem;
+    color: var(--lightColor);
+    line-height: 2.7rem;
+}
+
+/* AboutUs Section */
+.aboutImg {
+    width: 47rem;
+    height: 39rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.aboutImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.btn {
+    width: 23rem;
+    height: 10rem;
+    position: absolute;
+    top: 35rem;
+    left: 24.25rem;
+    background-color: var(--darkColor);
+}
+
+.btn:hover {
+    background-color: #ff860deb;
+}
+
+.btn h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--secondaryColor);
+}
+
+.btn p {
+    font-size: 1.6rem;
+    color: var(--lightColor);
+}
+
+.icon i {
+    font-size: 4.8rem;
+    margin-right: 3rem;
+}
+
+.text h3 {
+    font-size: 2.4rem;
+    color: var(--primaryColor);
+    margin-bottom: 3rem;
+}
+
+.text p {
+    font-size: 1.5rem;
+    color: #000000b3;
+}
+
+/* service section */
+.serviceBtn {
+    background-color: var(--lightColor);
+    font-size: 1.5rem;
+    color: var(--primaryColor);
+    font-weight: 500;
+    padding: 1.5rem 2rem;
+    border: solid 1px var(--secondaryColor);
+}
+
+.serviceBtn:hover {
+    text-decoration: none;
+    background-color: var(--primaryColor);
+    color: var(--lightColor);
+}
+
+.serviceCards {
+    padding: 5rem;
+    margin-bottom: 3rem;
+    box-shadow: #0000000d 0px 0px 3px 2px;
+}
+
+.serviceCardHead img {
+    width: 18rem;
+}
+
+.serviceCardBody {
+    margin-left: 2rem;
+}
+
+.serviceCardBody h3 a {
+    font-size: 1.9rem;
+    color: var(--primaryColor);
+}
+
+.serviceCardBody p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--tertiaryColor);
+    line-height: 2.7rem;
+    margin-top: 1.2rem;
+}
+
+/* Testimonials section */
+.testimonialsImg img {
+    width: 44rem;
+    height: 44rem;
+}
+
+.text p {
+    font-size: 1.8rem;
+    color: var(--tertiaryColor);
+    line-height: 3.9rem;
+    margin-bottom: 5rem;
+}
+
+.personImg img {
+    border-radius: 50%;
+    margin-right: 2rem;
+}
+
+.personText h4 {
+    font-size: 1.8rem;
+    color: var(--primaryColor);
+}
+
+.personText p {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.card-head {
+    padding: 1rem;
+    width: 25rem;
+}
+
+/* footer section */
+footer {
+    background-color: var(--bgColor);
+    padding: 10rem 0rem 5rem 0rem;
+}
+
+.footercardBody .list-items a {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--primaryColor);
+}
+
+.list-item {
+    margin-bottom: 1.5rem;
+}
+
+.list-item a {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--tertiaryColor);
+}
+
+.list-item a:hover {
+    color: var(--darkColor);
+}
+
+.media .media-icons a {
+    color: var(--tertiaryColor);
+}
+
+.media-icons a:hover {
+    color: var(--darkColor);
+}
+
+.copyrightsText {
+    font-size: 1.4rem;
+    color: var(--secondaryColor);
+    line-height: 2.7rem;
+}
+
+.copyrightsText span a {
+    color: var(--darkColor);
+}
+
+.copyrightsText span a:hover {
+    text-decoration: none;
+    color: var(--secondaryColor);
+}
+
+
+/* ::::: RESPONSIVE DESIGN DEVICE SIZES ::::: */
+
+/* for Responsive Target the ROW Code (display:grid) */
+
+/* Small devices (landscape phones, upto 576px and below) */
+/* @media (width <=576px) */
+@media (max-width: 576px) {
+
+    section {
+        padding: 5rem 0rem;
+    }
+
+    .row {
+        padding: 0rem 2rem;
+    }
+
+    .nav_top {
+        padding: 2rem 0rem 1rem 0rem;
+    }
+
+    .navbar-brand img {
+        width: 22rem;
+        padding: 0rem 0rem;
+    }
+
+    .phno {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar-brand {
+        margin-right: 0rem;
+    }
+
+    .nav-media-icons a,
+    .button a,
+    .carouselImg img,
+    .carousel-control-prev,
+    .carousel-control-next,
+    .testimonialsImg img {
+        display: none;
+    }
+
+    .carouselContent h1 {
+        font-size: 4.8rem;
+    }
+
+    .carouselContent p {
+        line-height: 2.2rem;
+        margin-bottom: 4rem;
+    }
+
+    .carouselContent {
+        padding: 0rem 3rem;
+        width: 100%;
+    }
+
+    .heading h2 {
+        font-size: 3.4rem;
+        line-height: 5rem;
+    }
+
+    .heroButton {
+        margin-bottom: 7rem;
+    }
+
+    .requirementCards01 {
+        width: 45rem;
+        height: 45rem;
+    }
+
+    .requirementCards02 {
+        width: 45rem;
+        height: 45rem;
+    }
+
+    .requirementCards03 {
+        width: 45rem;
+        height: 45rem;
+    }
+
+    .aboutImg {
+        width: 35rem;
+        height: 39rem;
+        overflow: hidden;
+    }
+
+    .aboutImg img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .btn {
+        position: relative;
+        top: -5rem;
+        left: 6rem;
+    }
+
+    .ourServices .sb {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .serviceCards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 5rem 0rem;
+    }
+
+    .serviceCardHead {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 3rem;
+    }
+
+    .serviceCardHead img {
+        width: 8rem;
+    }
+
+    footer {
+        padding: 0rem 0rem;
+    }
+
+    .copyrights {
+        text-align: start;
+    }
+
+    .media-icons a {
+        color: var(--tertiaryColor);
+    }
+
+    .footer .cpys {
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 1rem 0rem;
+    }
+}
+
+/* Medium devices (tablets, upto 768px and above) */
+/* @media (min-width: 577px) and (max-width: 768px) */
+@media (width >=577px) and (width <=768px) {
+
+    .row {
+        padding: 0rem 0rem;
+    }
+
+    .phno {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar-brand {
+        margin-right: 0rem;
+    }
+
+    .nav-media-icons a,
+    .button a,
+    .carouselImg img,
+    .carousel-control-prev,
+    .carousel-control-next,
+    .testimonialsImg img {
+        display: none;
+    }
+
+    .carouselContent {
+        padding: 0rem 3rem;
+        width: 100%;
+    }
+
+    .heading h2 {
+        font-size: 3.4rem;
+        line-height: 5rem;
+    }
+
+    .heroButton {
+        margin-bottom: 7rem;
+    }
+
+    .requirementCards01 {
+        width: 100%;
+    }
+
+    .requirementCards02 {
+        width: 100%;
+    }
+
+    .requirementCards03 {
+        width: 100%;
+    }
+
+    .aboutImg {
+        position: relative;
+    }
+
+    .btn {
+        position: absolute;
+        top: 35rem;
+        left: 27.5rem;
+    }
+
+    .ourServices .sb {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .footer .cpys {
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 1rem 0.7rem;
+    }
+}
+
+
+/* Large devices (Laptops, upto 992px and above) */
+/* @media (min-width: 769px) and (max-width: 992px) */
+@media (width >=769px) and (width <=992px) {
+
+    .aboutImg {
+        position: relative;
+    }
+
+    .btn {
+        position: absolute;
+        top: 35rem;
+        left: 36.5rem;
+    }
+
+    .ourServices .sb {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .footer .cpys {
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 1rem 0.7rem;
+    }
+}
